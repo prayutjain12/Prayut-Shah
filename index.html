@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Resume - Prayut Shah</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: linear-gradient(to right, #dae2f8, #d6a4a4);
+            color: #333;
+        }
+        header {
+            background: linear-gradient(to right, #373B44, #4286f4);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+        }
+        header h1 {
+            font-size: 3rem;
+            animation: fadeIn 2s ease;
+        }
+        header p {
+            font-size: 1.2rem;
+            animation: fadeIn 2.5s ease;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            background-color: #2b5876;
+            margin: 0;
+            padding: 1rem 0;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+        section {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: linear-gradient(to bottom right, #eef2f3, #8e9eab);
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            animation: fadeSlideIn 1.5s ease;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        section:hover {
+            transform: translateY(-10px);
+            background-color: #d6d6d6;
+        }
+        .progress-bar {
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            overflow: hidden;
+            height: 10px;
+            margin: 0.5rem 0;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .progress-bar span {
+            display: block;
+            height: 100%;
+            background-color: #4286f4;
+            transition: width 1s ease;
+        }
+        form label {
+            display: block;
+            margin: 0.5rem 0;
+        }
+        form input, form textarea, form button {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            transition: box-shadow 0.3s ease, transform 0.3s;
+        }
+        form input:focus, form textarea:focus {
+            box-shadow: 0 0 10px rgba(66, 134, 244, 0.8);
+        }
+        form button {
+            background-color: #4286f4;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        form button:hover {
+            background-color: #326ac0;
+            transform: scale(1.05);
+        }
+        #download-resume {
+            margin-top: 1rem;
+            padding: 0.8rem 1.5rem;
+            background: linear-gradient(to right, #6dd5ed, #2193b0);
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 12px;
+            font-size: 1rem;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+        #download-resume:hover {
+            background: linear-gradient(to right, #5cc1e6, #17648c);
+            transform: scale(1.1);
+        }
+        footer {
+            text-align: center;
+            background: linear-gradient(to right, #373B44, #4286f4);
+            color: white;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+        }
+        footer .social-icons a {
+            color: white;
+            margin: 0 0.5rem;
+            text-decoration: none;
+            font-size: 1.5rem;
+            transition: transform 0.3s;
+        }
+        footer .social-icons a:hover {
+            transform: scale(1.2);
+            color: #ffd700;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeSlideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Prayut Shah</h1>
+            <p>BCA 4th Semester Student</p>
+            <p><i class="fas fa-envelope"></i> jainprayut31@gmsil.com| <i class="fas fa-phone"></i> 9783741330 | <a href="https://linkedin.com/in/prayutshah" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello everyone! 👩‍💻👨‍💻 I am Prayut Shah, a dedicated BCA student in my 4th semester. I am passionate about programming, web development, and always eager to learn new technologies.</p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>Bachelor of Computer Applications - 4th Semester</li>
+                <li>Certification in C Programming, SQL</li>
+                <li>Achievement: Best Project Award in College</li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>C, C++, R, SQL</li>
+                <li>HTML, CSS, Responsive Design</li>
+                <li>Team Collaboration and Problem-Solving</li>
+            </ul>
+            <div class="skill-bars">
+                <div class="skill">
+                    <p>C Programming</p>
+                    <div class="progress-bar"><span style="width: 90%;"></span></div>
+                </div>
+                <div class="skill">
+                    <p>HTML & CSS</p>
+                    <div class="progress-bar"><span style="width: 85%;"></span></div>
+                </div>
+                <div class="skill">
+                    <p>SQL</p>
+                    <div class="progress-bar"><span style="width: 80%;"></span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <ul>
+                <li>Sales Executive Intern - E-commerce</li>
+                <li>Summer Internship - IDFC First Bank</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Portfolio Website:</strong> A personal website to showcase my skills and projects.</li>
+                <li><strong>E-commerce Dashboard:</strong> Designed a dashboard to track sales and manage inventory.</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <div style="text-align: center;">
+            <button id="download-resume">Download Resume</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Prayut Shah. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
